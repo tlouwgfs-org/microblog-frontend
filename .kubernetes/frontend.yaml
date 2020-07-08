@@ -5,6 +5,7 @@ metadata:
   name: "microblog-frontend-REPLACE_REPO_OWNER"
   labels:
     app: "microblog-frontend-REPLACE_REPO_OWNER"
+    app.type: "workshop"
 spec:
   replicas: 1
   selector:
@@ -14,6 +15,7 @@ spec:
     metadata:
       labels:
         app: "microblog-frontend-REPLACE_REPO_OWNER"
+        app.type: "workshop"
     spec:
       containers:
       - name: "microblog-frontend"
@@ -29,6 +31,7 @@ metadata:
   name: "microblog-frontend-REPLACE_REPO_OWNER"
   labels:
     app: "microblog-frontend-REPLACE_REPO_OWNER"
+    app.type: "workshop"
 spec:
   ports:
   - protocol: "TCP"
@@ -46,6 +49,7 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
   labels:
     app: "microblog-frontend-REPLACE_REPO_OWNER"
+    app.type: "workshop"
 spec:
   rules:
   - host: REPLACE_HOSTNAME
